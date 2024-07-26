@@ -1,10 +1,12 @@
 - type: entity
-  parent: ClothingHeadHatHoodWinterBase
+  parent:
+  - ClothingHeadHatHoodWinterBase
+  - ContrabandClothing
   id: ClothingHeadHatHoodArcadia
   noSpawn: true
   name: arcadia coat hood
   components:
   - type: Sprite
-    sprite: _NF/Clothing/Head/Hoods/Coat/hoodarcadia.rsi
+    sprite: _NF/Clothing/Head/Hoods/Coat/arcadia.rsi
   - type: Clothing
-    sprite: _NF/Clothing/Head/Hoods/Coat/hoodarcadia.rsi
+    sprite: _NF/Clothing/Head/Hoods/Coat/arcadia.rsi

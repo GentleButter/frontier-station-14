@@ -25,8 +25,8 @@
       - MobCatClarpy
 
 - type: entity
-  name: Crispy Spawner
-  id: SpawnMobCatCrispy
+  name: Cappy Spawner
+  id: SpawnMobCatCappy
   parent: MarkerBase
   components:
   - type: Sprite
@@ -35,4 +35,4 @@
       - state: ai
   - type: ConditionalSpawner
     prototypes:
-      - MobCatCrispy
+      - MobCatCappy

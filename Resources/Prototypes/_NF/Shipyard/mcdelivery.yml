@@ -9,7 +9,7 @@
   id: McDelivery
   name: DC McDelivery
   description: "Fast food fast ship, bring the McCargo meals to the people"
-  price: 11300
+  price: 8500
   category: Small
   group: None
   shuttlePath: /Maps/_NF/Shuttles/mcdelivery.yml
@@ -29,5 +29,4 @@
             !type:NanotrasenNameGenerator
             prefixCreator: '14'
         - type: StationJobs
-          overflowJobs: []
           availableJobs: {}

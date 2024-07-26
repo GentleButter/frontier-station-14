@@ -1,4 +1,7 @@
 - type: playTimeTracker
+  id: JobERTMailCarrier
+
+- type: playTimeTracker
   id: JobMercenary
 
 - type: playTimeTracker
@@ -8,4 +11,16 @@
   id: JobSecurityGuard
 
 - type: playTimeTracker
+  id: JobSeniorOfficer
+
+- type: playTimeTracker
   id: JobStc
+
+- type: playTimeTracker
+  id: JobPirateCaptain
+  
+- type: playTimeTracker
+  id: JobPirateFirstMate
+  
+- type: playTimeTracker
+  id: JobPirate

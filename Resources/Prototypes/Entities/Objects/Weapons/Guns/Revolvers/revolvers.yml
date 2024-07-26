@@ -8,18 +8,20 @@
   - type: Sprite
     state: icon
   - type: Item
-    size: 10
+    size: Small
+    shape:
+    - 0,0,1,0
+    - 0,1,0,1
   - type: Tag
     tags:
     - Sidearm
-    - WeaponRanged # Frontier
-    - WeaponShortArms # Frontier
   - type: Clothing
     sprite: Objects/Weapons/Guns/Revolvers/deckard.rsi
     quickEquip: false
     slots:
     - suitStorage
     - Belt
+  - type: AmmoCounter
   - type: Gun
     selectedMode: SemiAuto
     fireRate: 1.5
@@ -27,6 +29,8 @@
     - SemiAuto
     soundGunshot:
       path: /Audio/Weapons/Guns/Gunshots/revolver.ogg
+  - type: UseDelay
+    delay: 0.66
   - type: ContainerContainer
     containers:
       revolver-ammo: !type:Container
@@ -35,6 +39,7 @@
       tags:
         - CartridgeMagnum
         - SpeedLoaderMagnum
+    mayTransfer: true # Frontier
     proto: CartridgeMagnum
     capacity: 6
     chambers: [ True, True, True, True, True, True ]
@@ -50,7 +55,7 @@
   name: Deckard
   parent: BaseWeaponRevolver
   id: WeaponRevolverDeckard
-  description: A rare, custom-built revolver. Use when there is no time for Voight-Kampff test. Uses .45 magnum ammo.
+  description: A rare, civilian grade custom-built revolver. Use when there is no time for Voight-Kampff test. Uses .45 magnum ammo.
   components:
   - type: Sprite
     sprite: Objects/Weapons/Guns/Revolvers/deckard.rsi
@@ -78,7 +83,7 @@
   name: Inspector
   parent: BaseWeaponRevolver
   id: WeaponRevolverInspector
-  description: A detective's best friend. Uses .45 magnum ammo.
+  description: A detective's best friend. Uses .45 magnum ammo. On the handle is a label that says 'for authorized use only.'
   components:
   - type: Sprite
     sprite: Objects/Weapons/Guns/Revolvers/inspector.rsi
@@ -93,7 +98,7 @@
   name: Mateba
   parent: BaseWeaponRevolver
   id: WeaponRevolverMateba
-  description: The iconic sidearm of the dreaded death squads. Uses .45 magnum ammo.
+  description: The iconic sidearm of the dreaded death squads. Uses .45 magnum ammo. On the handle is a label that says 'for authorized use only.'
   components:
   - type: Sprite
     sprite: Objects/Weapons/Guns/Revolvers/mateba.rsi
@@ -108,7 +113,7 @@
   name: Python
   parent: BaseWeaponRevolver
   id: WeaponRevolverPython
-  description: A robust revolver favoured by Syndicate agents. Uses .45 magnum ammo.
+  description: An illegal revolver favoured by Syndicate agents. Uses .45 magnum ammo.
   components:
   - type: Sprite
     sprite: Objects/Weapons/Guns/Revolvers/python.rsi
@@ -131,7 +136,7 @@
   parent: WeaponRevolverPython
   id: WeaponRevolverPythonAP # For the uplink.
   suffix: armor-piercing
-  description: A robust revolver favoured by Syndicate agents. Uses .45 magnum ammo.
+  description: An illegal revolver favoured by Syndicate agents. Uses .45 magnum ammo.
   components:
   - type: RevolverAmmoProvider
     whitelist:
@@ -139,13 +144,14 @@
         - CartridgeMagnum
         - SpeedLoaderMagnum
     proto: CartridgeMagnumAP
+  - type: Contraband #frontier
 
 
 - type: entity
   name: pirate revolver
   parent: BaseWeaponRevolver
   id: WeaponRevolverPirate
-  description: An odd, old-looking revolver, favoured by pirate crews. Uses .45 magnum ammo.
+  description: An odd, illegal, old-looking revolver, favoured by pirate crews. Uses .45 magnum ammo.
   components:
   - type: Sprite
     sprite: Objects/Weapons/Guns/Revolvers/pirate_revolver.rsi

@@ -78,10 +78,10 @@
   components:
   - type: Loadout
     prototypes:
-    - HoPGear
-    - CentcomGear
+    #- HoPGear
+    #- CentcomGear
     - CaptainGear
-    - HoSGear
+    #- HoSGear
     - ResearchDirectorGear
     - CMOGear
     - ChiefEngineerGear

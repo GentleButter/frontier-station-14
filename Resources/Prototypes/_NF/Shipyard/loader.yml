@@ -1,3 +1,13 @@
+# Author Info
+# GitHub: SurfinNinja1
+# Discord: ???
+
+# Maintainer Info
+# GitHub: ???
+# Discord: ???
+
+# Shuttle Notes:
+#
 - type: vessel
   id: Loader
   name: NC Loader
@@ -22,6 +32,7 @@
             !type:NanotrasenNameGenerator
             prefixCreator: '14'
         - type: StationJobs
-          overflowJobs: []
           availableJobs:
-            CargoTechnician: [ 0, 0 ]
+            Contractor: [ 0, 0 ]
+            Pilot: [ 0, 0 ]
+            Mercenary: [ 0, 0 ]

@@ -5,13 +5,13 @@
   id: DockTransit
 
 - type: Tag
-  id: LabGrown
-
-- type: Tag
-  id: PetWearableCat
+  id: CatWearable
 
 - type: Tag
   id: BookSpaceLaw
+
+- type: Tag
+  id: BookNfsdSop
 
 - type: Tag
   id: CrossbowBolt
@@ -48,3 +48,45 @@
 
 - type: Tag
   id: PrizeTicket
+
+- type: Tag
+  id: Mail
+
+- type: Tag
+  id: MailCapsule
+
+- type: Tag
+  id: SecurityUplink
+
+- type: Tag
+  id: PirateUplink
+
+- type: Tag
+  id: DroneUsable
+
+- type: Tag
+  id: LightReplacer
+
+- type: Tag
+  id: VirologyLab
+
+- type: Tag
+  id: SalvageOutpost
+  
+- type: Tag
+  id: HoverbikeKeys
+  
+- type: Tag
+  id: WeaponRifleNovaliteC1
+  
+- type: Tag
+  id: MagazineNovaliteC1
+
+- type: Tag
+  id: TrackingDart
+  
+- type: Tag
+  id: SpeedLoaderRifleHeavy
+
+- type: Tag
+  id: ClothingRobesGoblin
