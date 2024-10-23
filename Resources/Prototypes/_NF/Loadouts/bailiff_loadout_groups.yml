@@ -6,21 +6,17 @@
   - BailiffClothingUniformJumpskirtBailiff
   fallbacks:
   - BailiffClothingUniformJumpsuitBailiff
+  - BailiffClothingUniformJumpskirtBailiff
 
 - type: loadoutGroup
   id: BailiffOuterClothing
   name: loadout-group-contractor-outerclothing
   minLimit: 0
   loadouts:
+  - ContractorClothingOuterVestTank
   - BailiffOuterClothing
-
-- type: loadoutGroup
-  id: BailiffShoes
-  name: loadout-group-contractor-shoes
-  loadouts:
-  - NfsdClothingShoesBootsCream
   fallbacks:
-  - NfsdClothingShoesBootsCream
+  - ContractorClothingOuterVestTank
 
 - type: loadoutGroup
   id: BailiffHead
@@ -28,14 +24,6 @@
   minLimit: 0
   loadouts:
   - BailiffClothingHeadHatBailiff
-
-- type: loadoutGroup
-  id: BailiffGloves
-  name: loadout-group-contractor-gloves
-  loadouts:
-  - BailiffClothingHandsGlovesBailiff
-  fallbacks:
-  - BailiffClothingHandsGlovesBailiff
 
 - type: loadoutGroup
   id: BailiffNeck
@@ -47,15 +35,8 @@
 - type: loadoutGroup
   id: BailiffPDA
   name: loadout-group-contractor-id
+  hidden: true # No point in showing this, it gets auto-selected.
   loadouts:
   - BailiffBailiffPDA
   fallbacks:
   - BailiffBailiffPDA
-  
-- type: loadoutGroup
-  id: BailiffGlasses
-  name: loadout-group-contractor-glasses
-  loadouts:
-  - NfsdClothingEyesGlasses
-  fallbacks:
-  - NfsdClothingEyesGlasses

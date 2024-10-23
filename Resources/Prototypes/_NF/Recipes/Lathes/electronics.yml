@@ -1,14 +1,43 @@
 - type: latheRecipe
-  id: TilePrinterNFMachineCircuitboard
-  result: TilePrinterNFMachineCircuitboard
+  id: SalvageTechFabCircuitboardNF
+  result: SalvageTechFabCircuitboardNF
+  category: Circuitry
   completetime: 4
   materials:
-    Steel: 700
+    Steel: 800
     Glass: 900
 
 - type: latheRecipe
-  id: SalvageTechFabCircuitboardNF
-  result: SalvageTechFabCircuitboardNF
+  id: BlueprintLithographMachineCircuitboard
+  result: BlueprintLithographMachineCircuitboard
+  category: Circuitry
+  completetime: 4
+  materials:
+    Steel: 800
+    Glass: 900
+
+- type: latheRecipe
+  id: ElectricRangeMachineCircuitboard
+  result: ElectricRangeMachineCircuitboard
+  category: Circuitry
+  completetime: 4
+  materials:
+    Steel: 800
+    Glass: 900
+
+- type: latheRecipe
+  id: KitchenAssemblerMachineCircuitboard
+  result: KitchenAssemblerMachineCircuitboard
+  category: Circuitry
+  completetime: 4
+  materials:
+    Steel: 600
+    Glass: 750
+
+- type: latheRecipe
+  id: MedicalAssemblerMachineCircuitboard
+  result: MedicalAssemblerMachineCircuitboard
+  category: Circuitry
   completetime: 4
   materials:
     Steel: 800
@@ -18,6 +47,7 @@
 - type: latheRecipe
   id: ThrusterSecurityMachineCircuitboard
   result: ThrusterSecurityMachineCircuitboard
+  category: Circuitry
   completetime: 4
   materials:
     Steel: 400
@@ -26,6 +56,7 @@
 - type: latheRecipe
   id: ThrusterNfsdMachineCircuitboard
   result: ThrusterNfsdMachineCircuitboard
+  category: Circuitry
   completetime: 4
   materials:
     Steel: 400
@@ -34,48 +65,46 @@
 - type: latheRecipe
   id: SmallThrusterMachineCircuitboard
   result: SmallThrusterMachineCircuitboard
+  category: Circuitry
   completetime: 4
+  applyMaterialDiscount: false
   materials:
     Steel: 140
     Glass: 300
 
 # Gyroscope
 - type: latheRecipe
+  parent: BaseCircuitboardRecipe
   id: GyroscopeSecurityMachineCircuitboard
   result: GyroscopeSecurityMachineCircuitboard
-  completetime: 4
-  materials:
-    Steel: 400
-    Glass: 900
+  category: Circuitry
 
 - type: latheRecipe
+  parent: BaseCircuitboardRecipe
   id: SmallGyroscopeSecurityMachineCircuitboard
   result: SmallGyroscopeSecurityMachineCircuitboard
-  completetime: 4
-  materials:
-    Steel: 50
-    Glass: 120
 
 - type: latheRecipe
+  parent: BaseCircuitboardRecipe
   id: GyroscopeNfsdMachineCircuitboard
   result: GyroscopeNfsdMachineCircuitboard
-  completetime: 4
-  materials:
-    Steel: 400
-    Glass: 900
 
 - type: latheRecipe
+  parent: BaseCircuitboardRecipe
   id: SmallGyroscopeNfsdMachineCircuitboard
   result: SmallGyroscopeNfsdMachineCircuitboard
-  completetime: 4
-  materials:
-    Steel: 50
-    Glass: 120
 
 - type: latheRecipe
+  parent: BaseCircuitboardRecipe
   id: SmallGyroscopeMachineCircuitboard
   result: SmallGyroscopeMachineCircuitboard
+
+# Generators
+- type: latheRecipe
+  id: PortableGeneratorHyperPacmanMachineCircuitboard
+  result: PortableGeneratorHyperPacmanMachineCircuitboard
+  category: Circuitry
   completetime: 4
   materials:
-    Steel: 50
-    Glass: 120
+     Steel: 350
+     Glass: 350

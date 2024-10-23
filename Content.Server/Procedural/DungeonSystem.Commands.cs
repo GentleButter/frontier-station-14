@@ -51,6 +51,8 @@ public sealed partial class DungeonSystem
             dungeonUid = EntityManager.CreateEntityUninitialized(null, new EntityCoordinates(dungeonUid, position));
             dungeonGrid = EntityManager.AddComponent<MapGridComponent>(dungeonUid);
             EntityManager.InitializeAndStartEntity(dungeonUid, mapId);
+            // If we created a grid (e.g. space dungen) then offset it so we don't double-apply positions
+            position = Vector2i.Zero;
         }
 
         int seed;
@@ -69,7 +71,7 @@ public sealed partial class DungeonSystem
         }
 
         shell.WriteLine(Loc.GetString("cmd-dungen-start", ("seed", seed)));
-        GenerateDungeon(dungeon, dungeonUid, dungeonGrid, position, seed);
+        GenerateDungeon(dungeon, dungeon.ID, dungeonUid, dungeonGrid, position, seed); // Frontier: add dungeon.ID
     }
 
     private CompletionResult CompletionCallback(IConsoleShell shell, string[] args)
